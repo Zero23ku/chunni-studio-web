@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'Cookie-run';
+  src: url('./font/CookieRun\ Regular.otf')
+}
+
+
+body {
+  min-height: 100vh;
+  color: black;
+  background: linear-gradient(0deg, #907add 0%, #ffffff 100%);
+  line-height: 1.6;
+  font-family:
+    'Cookie-run',
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Fira Sans',
+    'Droid Sans',
+    'Helvetica Neue',
+    sans-serif;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
