@@ -87,7 +87,7 @@ for(let i = 0; i < ascii.length; i++) {
 <template>
   <header>
     <div class="h-wrapper">
-      <img alt="Logo de Chunni Studio" class="logo" src="./assets/img/logo.png" width="40%"/>
+      <img alt="Logo de Chunni Studio" class="logo" src="./assets/img/logo.png"/>
       <br>
       <h1>Somos Chunni Studio, un grupo que se dedica a crear contenido y crear espacios donde compartir</h1>
     </div>
@@ -139,6 +139,18 @@ for(let i = 0; i < ascii.length; i++) {
 </template>
 
 <style scoped>
+
+  @media (width < 650px) {
+    .logo {
+      width: 80%;
+    }
+  }
+
+  @media (width >= 650px) {
+    .logo {
+      width: 40%;
+    }
+  }
   
   .h-wrapper, .a-wrapper, .l-wrapper, .o-wrapper {
     display: flex;
