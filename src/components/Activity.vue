@@ -78,7 +78,7 @@ function closeModal() {
 }
 @media (width >= 1128px) {
   .m-info {
-    margin-top: 200px;
+    margin-top: 180px;
     font-size:3vh;
   }
 }
