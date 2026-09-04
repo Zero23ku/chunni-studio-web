@@ -23,10 +23,10 @@ const gishiInfo = ['Gishimon', 'Narrativo', '15 de Mayo', 'Dragon Hikki', 'Churr
 const pupaInfo = ['Pupa', 'Agénero', '24 de Julio', 'Androide', 'Arroz con huevo', 'Cantar, rabiar, dibujar', 'Se encontró en territorio enemigo en contra de su voluntad'];
 
 const chunniFmInfo = "En ChunniFM buscamos darle una vetana de exposición al talento de la comunidad latina, al puro estilo de un programa de radio.";
-const chunniFmHorario = "20:30 hrs";
+const chunniFmHorario = "20:30 hrs Chile";
 
 const rcsInfo = "En Retro Chunni Show buscamos explorar los juegos del pasado y redescubrir las joyitas que se ocultan allí."
-const rcsHorario = "20:30 hrs";
+const rcsHorario = "20:30 hrs Chile";
 
 const ascii = ["                                        ++*+                                                        ", 
 "                                  ###%@@@@@@@@@%#                                                   ",
