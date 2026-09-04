@@ -3,6 +3,11 @@
   src: url('./font/CookieRun\ Regular.otf')
 }
 
+@font-face {
+  font-family: 'Cookie-runB';
+  src: url(./font/CookieRun\ Bold.otf);
+}
+
 
 body {
   min-height: 100vh;
@@ -10,7 +15,7 @@ body {
   background: linear-gradient(0deg, #907add 0%, #ffffff 100%);
   line-height: 1.6;
   font-family:
-    'Cookie-run',
+    'Cookie-runB',
     Inter,
     -apple-system,
     BlinkMacSystemFont,
@@ -27,4 +32,9 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+a, a:visited, a:hover, a:focus, a:active {
+    color: inherit;
+    text-decoration: none;
 }

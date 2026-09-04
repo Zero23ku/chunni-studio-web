@@ -3,7 +3,11 @@ import { ref } from 'vue';
 
 const props = defineProps({
     name: String,
-    image: String
+    image: String,
+    special: {
+        type: Boolean,
+        default: false
+    }
 
 });
 
@@ -11,13 +15,10 @@ const isHovered = ref(false);
 
 function handleMouseover() {
     isHovered.value = true;
-    console.log(isHovered.value);
 };
 
 function handleMouseleave() {
     isHovered.value = false;
-    console.log(isHovered.value);
-
 };
 
 
@@ -28,12 +29,13 @@ function handleMouseleave() {
         <transition name="fade">
             <h1 v-show="isHovered">{{ props.name }}</h1>
         </transition>   
-        <img class="m-img" :src="props.image" alt="Member image" />
+        <img :src="props.image" :class="props.special ? ['m-img-special','flip'] : 'm-img'" alt="Member image" />
     </div>
    
 </template>
 
 <style scoped>
+
 .m-wrapper {
     background-color: white;
     height: 200px;
@@ -43,7 +45,7 @@ function handleMouseleave() {
     display: flex;
     align-items: center;
     padding-left: 40px;
-    flex: 0 0 360px; /* fijo: no crece (0), no encoge (0) */
+    flex: 0 0 360px;
 }
 
 .m-wrapper:hover {
@@ -56,12 +58,25 @@ function handleMouseleave() {
     right: -355px;
     width: 700px;
 }
+
+.m-img-special {
+    position: absolute;
+    top: -366px;
+    right: -323px;
+    width: 700px; 
+}
+
+
 .fade-enter-active, .fade-leave-active {
   transition: opacity 0.2s ease;
 }
 
 .fade-enter-from, .fade-leave-to {
   opacity: 0;
+}
+
+.flip {
+    transform: scale(-1,-1);
 }
     
 </style>
