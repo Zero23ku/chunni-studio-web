@@ -48,6 +48,10 @@ function handleMouseleave() {
     flex: 0 0 360px;
 }
 
+.m-wrapper h1 {
+    font-size: 60px;
+}
+
 .m-wrapper:hover {
     cursor: pointer;
 }

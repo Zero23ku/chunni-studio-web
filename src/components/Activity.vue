@@ -36,6 +36,11 @@ function handleMouseleave() {
     align-items: center;
     justify-content: center;
     flex: 0 0 360px;
+    text-align: center;
+}
+
+.m-wrapper h1 {
+    font-size: 40px;
 }
 
 .m-wrapper:hover {
