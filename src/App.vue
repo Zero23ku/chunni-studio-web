@@ -21,6 +21,8 @@ const nanaInfo = ['Nana', 'Esqueleto', '14 de Enero', 'Esqueleto', 'Fideos con c
 const harpuiaInfo = ['Harpuia', 'Masculino', '04 de Agosto', 'Rana Greninja', 'Arroz con pollo', 'Videojuegos, coleccionar figuras, coleccionar consolas retro', 'Uso el pelo largo por Zero (Megaman)'];
 const gishiInfo = ['Gishimon', 'Narrativo', '15 de Mayo', 'Dragon Hikki', 'Churrasco Chacarero', 'Dibujar, juego, procastinar, tirar blasfemias a mis amiguitos', 'Me gane una sandwichera en un sorteo'];
 const pupaInfo = ['pupa', 'Agénero', '24 de Julio', 'Androide', 'Arroz con huevo', 'Cantar, rabiar, dibujar', 'Se encontró en territorio enemigo en contra de su voluntad'];
+const risaInfo = ['Risa', 'Chica', '9 de Marzo', 'Chica mágica', 'Pollo con curry', 'Leer Yuri', 'Puedo amarrar mis zapatos en 3 segundos']
+const hanachiInfo = ['Hanachi', 'Criatura', '13 de Abril', 'Chica mágica', 'Sushi', 'Hacer videos y vtubear en general', 'Puedo ladrar como un chihuahua']
 
 const chunniFmInfo = "En ChunniFM buscamos darle una vetana de exposición al talento de la comunidad latina, al puro estilo de un programa de radio.";
 const chunniFmHorario = "20:30 hrs Chile";
@@ -98,8 +100,8 @@ for(let i = 0; i < ascii.length; i++) {
       <Member name="Gikko" :image="gikkoPngUrl" :info="gikkoInfo"/>
       <Member name="Gishi" :image="gishiPngUrl" :info="gishiInfo"/>
       <Member name="Nana" :image="nanaPngUrl" :info="nanaInfo"/>
-      <Member name="Risa" :image="risaPngUrl" />
-      <Member name="Hanachi" :image="hanachiPngUrl" />
+      <Member name="Risa" :image="risaPngUrl" :info="risaInfo"/>
+      <Member name="Hanachi" :image="hanachiPngUrl" :info="hanachiInfo"/>
       <Member name="pupa" :image="pupaPngUrl" :info="pupaInfo" />
       <Member name="Harpuia" :image="harpuiaPngUrl" :special="true" :info="harpuiaInfo" />
       <Member name="Retniw" :image="retniwPngUrl" :info="retniwInfo"/>
